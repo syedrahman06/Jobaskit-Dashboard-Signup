@@ -95,7 +95,7 @@
 }
 
 .form-container form h3 {
-   font-size: 23px;
+   font-size: 28px;
    font-weight: 500;
    text-transform: uppercase;
    letter-spacing: 1px;
@@ -191,7 +191,7 @@
    left: 0;
    font-size: 15px;
    margin-bottom: 10px;
-   background-color: rgb(245, 245, 245);
+   background-color: rgb(249, 249, 249);
    border-radius: 5px;
    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
    box-sizing: border-box;
