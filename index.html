@@ -19,28 +19,35 @@
       crossorigin="anonymous" referrerpolicy="no-referrer" />
 
    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 </head>
 
 <body>
    <div class="container-fluid">
       <div class="row">
          <div class="col-md-6 p-0">
-            <img src="images/bg.PNG" alt="">
+            <img src="images/bg-new.png" alt="">
          </div>
          <div class="col-md-6 form-container p-0">
+
 
 
             <form action="" method="post">
                <h3>Login</h3>
 
+
+
                <div class="input-field">
-                  <i class="fa-solid fa-envelope"></i>
-                  <input type="email" name="email" required placeholder="Email"></input>
+
+                  <input type="text" name="email" required placeholder="">
+
+                  <label><i class="fa-solid fa-envelope"></i>Email</label>
                </div>
 
                <div class="input-field">
-                  <i class="fa-solid fa-lock"></i>
-                  <input type="password" name="password" required placeholder="Password">
+
+                  <input type="password" name="password" required placeholder="">
+                  <label> <i class="fa-solid fa-lock"></i></i>Password</label>
                </div>
 
 
@@ -49,18 +56,35 @@
                         class="fa-solid fa-arrow-right arrow"></i></button>
 
                </div>
-               <p>Don't have an account? <a href="register_form.html" style="color:#0b3578">Register Now</a></p>
+
+               <div class="forgot-pw">
+                  <a href="#">Forgot Password ?</a>
+               </div>
+
 
                <div class="social-div">
-                  <p>or</p>
-
+                  <div class="new-box">
+                     <div class="line"></div>
+                     <div class="textt">Or</div>
+                     <div class="line"></div>
+                  </div>
+                  <div class="social-text">Use your social profile to login</div>
                   <div class="btn-grp">
                      <button class="google-btn"><i class="fa-brands fa-google-plus-g"
                            style="margin-right:10px"></i>Google</button>
 
                   </div>
 
+
+
                </div>
+
+               <div class="new-user-div">
+                  <p>New User ? &emsp13;<a href="register_form.html" style="color:#0b3578">Register Now</a></p>
+               </div>
+
+
+
          </div>
          </form>
       </div>

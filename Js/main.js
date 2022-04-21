@@ -1,5 +1,5 @@
 var nameError = document.getElementById('name-error');
-var companyError = document.getElementById('company-error');
+
 var emailError = document.getElementById('email-error');
 var submitError = document.getElementById('submit-error');
 
@@ -16,24 +16,12 @@ function validateName() {
         return false;
     }
     nameError.innerHTML = '<i class="fa-solid fa-check-circle"></i>';
+    nameError.style.marginLeft = '118px !important';
     return true;
 
 }
 
-function validateCompany() {
-    var company = document.getElementById('contact-company').value;
 
-    if (company.length == 0) {
-        companyError.innerHTML = 'Company is required';
-        return false;
-    }
-    if (!company.match(/^[A-Za-z]$/)) {
-        companyError.innerHTML = '<i class="fa-solid fa-check-circle"></i>';
-        return true;
-    }
-
-
-}
 
 
 function validateEmail() {
@@ -53,10 +41,12 @@ function validateEmail() {
 }
 
 function validateForm() {
-    if (!validateName() || !validateCompany() || !validateEmail()) {
+    if (!validateName() || !validateEmail()) {
         submitError.style.display = 'block';
         submitError.innerHTML = 'Please fill the form to proceed';
         setTimeout(function () { submitError.style.display = 'none'; }, 3000);
         return false;
     }
 }
+
+

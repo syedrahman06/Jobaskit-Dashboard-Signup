@@ -21,7 +21,7 @@
    <div class="container-fluid">
       <div class="row">
          <div class="col-md-6 p-0">
-            <img src="images/bg.PNG" alt="">
+            <img src="images/bg-new.png" alt="">
          </div>
          <div class="col-md-6 form-container p-0">
 
@@ -29,28 +29,25 @@
                <h3>register</h3>
 
                <div class="input-field">
-                  <i class="fa-solid fa-signature"></i>
-                  <input type="text" name="name" required placeholder="Name" id="contact-name" onkeyup="validateName()">
+
+                  <input type="text" name="name" required placeholder="" id="contact-name" onkeyup="validateName()">
+                  <label> <i class="fa-solid fa-signature"></i>Name</label>
                   <span id="name-error"></span>
                </div>
 
-               <div class="input-field">
-                  <i class="fa-solid fa-signature"></i>
-                  <input type="text" name="company_name" required placeholder="Company Name" id="contact-company"
-                     onkeyup="validateCompany()">
-                  <span id="company-error"></span>
-               </div>
+
 
                <div class="input-field">
-                  <i class="fa-solid fa-envelope"></i>
-                  <input type="email" name="email" required placeholder="Email" id="contact-email"
-                     onkeyup="validateEmail()">
+
+                  <input type="text" name="email" required placeholder="" id="contact-email" onkeyup="validateEmail()">
+                  <label><i class="fa-solid fa-envelope"></i>Email</label>
                   <span id="email-error"></span>
                </div>
 
                <div class="input-field">
-                  <i class="fa-solid fa-lock"></i>
-                  <input type="password" name="password" required placeholder="Password">
+
+                  <input type="password" name="password" required placeholder="">
+                  <label> <i class="fa-solid fa-lock"></i>Password</label>
                </div>
 
 
@@ -65,7 +62,27 @@
 
                </div>
 
-               <p>Already have an account? <a href="index.html">Login Now</a></p>
+               <div class="social-div">
+                  <div class="new-box">
+                     <div class="line"></div>
+                     <div class="textt">Or</div>
+                     <div class="line"></div>
+                  </div>
+                  <div class="social-text">Use your social profile to login</div>
+                  <div class="btn-grp">
+                     <button class="google-btn"><i class="fa-brands fa-google-plus-g"
+                           style="margin-right:10px"></i>Google</button>
+
+                  </div>
+
+
+
+               </div>
+
+               <div class="new-user-div">
+                  <p>Already have an account ? &emsp13;<a href="index.html" style="color:#0b3578">Login Now</a>
+                  </p>
+               </div>
                <span id="submit-error"></span>
             </form>
 
